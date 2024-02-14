@@ -1,0 +1,20 @@
+<div class="container">
+    <h1 class=" fw-bolder">Meter/CM Converter</h1>
+    <div class="row">
+        <!-- FIRST CONVERTER START -->
+        <div class="col-8 border border-2 shadow p-4 d-flex p-5">
+            <div class="container border border-2 shadow mb-3">
+                <div class="mb-3 mt-3">
+                    <label for="meterInput">Meters</label>
+                    <input type="text"  class="form-control" placeholder="Enter meters" (input)="performMetertocmconversion()" [(ngModel)]="meter">
+                </div>
+                <div class="mb-3">
+                </div>
+                <div class="mb-3">
+                    <label for="centimeterInput">Centimeters</label>
+                    <input type="text"  class="form-control" placeholder="Enter centimeters" (input)="performCentimetertomconversion()" [(ngModel)]="centimeter">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

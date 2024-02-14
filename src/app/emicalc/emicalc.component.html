@@ -1,0 +1,32 @@
+<div class="container">
+
+    <div class="row mt-5">
+        <div class="col-3"></div>
+        <div class="col-6 p-5 border border-2 shadow rounded">
+            <h3 class="text-center fw-bolder my-2">EMI CALCULATOR</h3>
+            <form action="" [formGroup]="emiForm">
+                <div class="mb-4">
+                    <label for="">enter loan amount</label>
+                    <input type="text" placeholder="enter loan amount" class="form-control" formControlName="amount">
+                    <span class="form-text text-danger" *ngIf="amount?.touched && amount?.invalid">Invalid entry</span>
+                </div>
+                <div class="mb-4">
+                    <label for="">enter loan interest rate</label>
+                    <input type="text" placeholder="enter interest rate" class="form-control" formControlName="rate">
+                    <span class="form-text text-danger" *ngIf="rate?.touched && rate?.invalid">Invalid entry</span>
+                </div>
+                <div class="mb-4">
+                    <label for="">enter Tenure(months)</label>
+                    <input type="text" placeholder="enter loan tenure" class="form-control" formControlName="tenure">
+                    <span class="form-text text-danger" *ngIf="tenure?.touched && tenure?.invalid">Invalid entry</span>
+
+                </div>
+                <div class="mb-4 d-flex justify-content-center">
+                    <button type="submit" class="btn btn-success">calculate</button>
+
+                </div>
+            </form>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>
