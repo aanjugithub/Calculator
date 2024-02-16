@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EmicalcComponent } from './emicalc.component';
+import { BankComponent } from './bank.component';
 
-describe('EmicalcComponent', () => {
-  let component: EmicalcComponent;
-  let fixture: ComponentFixture<EmicalcComponent>;
+describe('BankComponent', () => {
+  let component: BankComponent;
+  let fixture: ComponentFixture<BankComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [EmicalcComponent]
+      declarations: [BankComponent]
     });
-    fixture = TestBed.createComponent(EmicalcComponent);
+    fixture = TestBed.createComponent(BankComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
